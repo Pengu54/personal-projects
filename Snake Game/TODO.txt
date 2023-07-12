@@ -1,0 +1,15 @@
+DEPENDENCIES ->
+game_gui > game_objects
+game_objects > main
+game_gui > main
+
+gui DONE
+create the snake and fruit (implemented as objects) DONE
+snake movement functionality DONE
+snake eating fruit functionality (point ++ and snake expansion) DONE
+game over functionality DONE
+restart/pause functions
+
+settings file, high score and options
+resizing support
+THEN FIN :)
