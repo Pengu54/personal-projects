@@ -3,6 +3,7 @@ import random
 
 SNAKE_COLOUR = "#00FF00"
 FRUIT_COLOUR = "#FF0000"
+REFRESH_RATE = 100
 GRID_SIZE = [20, 20] #x, y
 CELL_X = gui.grid_canvas.winfo_width() / GRID_SIZE[0]
 CELL_Y = gui.grid_canvas.winfo_height() / GRID_SIZE[1]
@@ -168,7 +169,7 @@ class Game():
             
             if collision == False:
                 self.snake.render()
-                gui.root.after(100, self.main)
+                gui.root.after(REFRESH_RATE, self.main)
             else:
                 if collision[1] == "fruit collision":
                     self.fruit.delete()
