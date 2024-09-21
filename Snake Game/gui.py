@@ -4,7 +4,7 @@ from PIL import Image, ImageTk
 root = tk.Tk()
 root.resizable(0, 0)
 root.title("Snake")
-root.iconbitmap(r"icons\root_icon.ico")
+root.iconbitmap(r"Snake Game\icons\root_icon.ico")
 
 frame = tk.Frame(root, width=500, height=130)
 frame.grid_propagate(0)
@@ -15,7 +15,7 @@ frame.grid_columnconfigure(2, weight=1)
 grid_canvas = tk.Canvas(root, width=500, height=500, highlightthickness=0, bg="black")
 grid_canvas.grid(row=1, column=0)
 
-img1_og = Image.open(r"icons\pause_icon.png").resize((27, 27))
+img1_og = Image.open(r"Snake Game\icons\pause_icon.png").resize((27, 27))
 img1_tk = ImageTk.PhotoImage(img1_og)
 pause_button = tk.Button(frame, image=img1_tk)
 pause_button.grid(row=0, column=0)
